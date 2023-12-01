@@ -3,6 +3,7 @@ FROM ubuntu:latest
 
 # Set the maintainer label
 LABEL maintainer="mail@cinaber.de"
+LABEL org.opencontainers.image.source https://github.com/cinber/tamarin-container
 
 RUN mkdir /home/ape/
 WORKDIR /home/ape/
