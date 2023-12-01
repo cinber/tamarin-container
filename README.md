@@ -5,7 +5,13 @@ This is supposed to be ready-to-go environment for using the [tamarin-cable](htt
 
 ## What can I do with it?
 You can use ipwndfu to demote checkm8 vulnerable iPhones. All the nessessary steps are taken to flash the tamarin firmware on the pico.
-You'll find the build steps in corresponsing repo.
+
+## How do I run it?
+We pull the contianer:
+`podman pull ghcr.io/cinber/tamarin-container:latest`
+
+And run it with:
+`podman run -it -p 4444:4444 ghcr.io/cinber/tamarin-container`
 
 ## Whats in it? (tools and firmware)
 - stacksmashing OpenOCD [fork](https://github.com/axi0mX/ipwndfu)
