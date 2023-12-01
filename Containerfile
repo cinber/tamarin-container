@@ -12,6 +12,8 @@ WORKDIR /home/ape/
 RUN apt-get update && apt-get install -y \
     build-essential \
     cmake \
+    make \
+    doxygen \
     tldr \
     libtool \
     autoconf \
@@ -47,11 +49,6 @@ WORKDIR /home/ape/
 
 # Clone Tamarin firmware
 RUN git clone --depth 1 https://github.com/stacksmashing/tamarin-firmware.git
-WORKDIR /home/ape/tamarin-firmware
-RUN cmake 
-WORKDIR /home/ape/tamarin-firmware/build
-RUN make    
-WORKDIR /home/ape/
 
 # Clone ipwndfu & bonobo configs
 RUN git clone https://github.com/axi0mX/ipwndfu.git
