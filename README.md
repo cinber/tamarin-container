@@ -8,10 +8,13 @@ You can use ipwndfu to demote checkm8 vulnerable iPhones. All the nessessary ste
 
 ## How do I run it?
 We pull the contianer:
-`podman pull ghcr.io/cinber/tamarin-container:latest`
-
+```
+podman pull ghcr.io/cinber/tamarin-container:latest
+```
 And run it with:
-`podman run -it -p 4444:4444 ghcr.io/cinber/tamarin-container`
+```
+podman run -it -p 4444:4444 ghcr.io/cinber/tamarin-container
+```
 
 ## Whats in it? (tools and firmware)
 - stacksmashing OpenOCD [fork](https://github.com/axi0mX/ipwndfu)
